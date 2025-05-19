@@ -1,5 +1,4 @@
 imaplib2
 beautifulsoup4
 selenium
-email
 chromedriver-autoinstaller
