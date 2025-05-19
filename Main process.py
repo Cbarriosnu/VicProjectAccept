@@ -4,10 +4,12 @@ from email.header import decode_header
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
+import os
 
-EMAIL = "cb41852@gmail.com"
-PASSWORD = "cidxtrssugidzmly"
-SENDER = "cbarriosnu@outlook.com"
+EMAIL = os.getenv("EMAIL")
+PASSWORD = os.getenv("PASSWORD")
+SENDER = os.getenv("SENDER")
+
 
 def check_email(username, password, sender_email):
     mail = imaplib.IMAP4_SSL("imap.gmail.com")
